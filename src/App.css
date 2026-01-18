@@ -1,0 +1,52 @@
+.app-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  min-height: 100vh;
+}
+
+header {
+  padding: 80px 0 60px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3.5rem;
+  /* Large and bold */
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  margin-bottom: 16px;
+  color: var(--text-main);
+  background: linear-gradient(135deg, var(--primary-color) 0%, #2563eb 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding-bottom: 10px;
+  /* For font descenders in gradient */
+}
+
+header p {
+  font-size: 1.25rem;
+  color: var(--text-muted);
+  font-weight: 400;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 32px;
+  padding-bottom: 80px;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  header {
+    padding: 60px 0 40px;
+  }
+
+  .card-grid {
+    gap: 20px;
+  }
+}

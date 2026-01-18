@@ -7,6 +7,7 @@ Build a visual "Prompt Gallery" for corporate training, where users can see high
 > [!IMPORTANT]
 > **Tech Stack**: We are proceeding with **React + Vite** and **Vanilla CSS** (no Tailwind) to ensure a premium, custom look.
 > **Data**: We will use a local `prompts.json` file as our database.
+> **Scalability**: This architecture is designed to be **easily upgradeable to Firebase** (Plan B) later. The `prompts.json` structure matches NoSQL documents, allowing for a seamless transition to an Admin Dashboard in Phase 2.
 
 ## Proposed Changes
 
