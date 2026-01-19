@@ -68,3 +68,18 @@ Build a visual "Prompt Gallery" for corporate training, where users can see high
 2. **Filtering**: Click "Marketing", verify only marketing cards show.
 3. **Modal**: Click a card, verify modal opens with correct data.
 4. **Copy**: Click "Copy Prompt", paste into notepad to verify clipboard content.
+
+## Phase 3: Deployment (GitHub Pages)
+
+### 1. Vite Configuration
+#### [MODIFY] [vite.config.js](file:///c:/project/geminipromptc/vite.config.js)
+- Set `base` to `'/geminipromptc/'` to match the GitHub repository name.
+
+### 2. GitHub Actions Workflow
+#### [NEW] [.github/workflows/deploy.yml](file:///c:/project/geminipromptc/.github/workflows/deploy.yml)
+- Create a workflow to automatically build and deploy to the `gh-pages` branch on every push to `main`.
+- Uses `actions/checkout`, `actions/setup-node`, and `gh-pages` deployment action.
+
+### 3. Execution
+- Commit and push changes to `main`.
+- Enable GitHub Pages in Repository Settings (Source: `gh-pages` branch).
